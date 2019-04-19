@@ -7,8 +7,8 @@
     <ProjectGuid>{5D1D02D6-8E9E-4484-AFE9-246A2AFF71D9}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomRenderer.UWP</RootNamespace>
-    <AssemblyName>CustomRenderer.UWP</AssemblyName>
+    <RootNamespace>PassXYZ.UI.UWP</RootNamespace>
+    <AssemblyName>PassXYZ.UI.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
@@ -16,7 +16,7 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>CustomRenderer.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>PassXYZ.UI.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -129,9 +129,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomRenderer\CustomRenderer.csproj">
+    <ProjectReference Include="..\PassXYZ.UI\PassXYZ.UI.csproj">
       <Project>{9f4c2bf1-cd9c-4777-b17a-c01dcf65db73}</Project>
-      <Name>CustomRenderer</Name>
+      <Name>PassXYZ.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

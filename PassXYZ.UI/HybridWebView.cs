@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace CustomRenderer
+namespace PassXYZ.UI
 {
 	public class HybridWebView : View
 	{

@@ -1,11 +1,11 @@
-﻿using CustomRenderer;
-using CustomRenderer.Droid;
+﻿using PassXYZ.UI;
+using PassXYZ.UI.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Android.Content;
 
 [assembly: ExportRenderer(typeof(HybridWebView), typeof(HybridWebViewRenderer))]
-namespace CustomRenderer.Droid
+namespace PassXYZ.UI.Droid
 {
     public class HybridWebViewRenderer : ViewRenderer<HybridWebView, Android.Webkit.WebView>
     {

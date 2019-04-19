@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>CustomRenderer</string>
+	<string>PassXYZ.UI</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.customrenderer</string>
+	<string>com.passxyz.ui</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

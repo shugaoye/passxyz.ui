@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace CustomRenderer
+namespace PassXYZ.UI
 {
 	public class App : Application
 	{

@@ -1,4 +1,4 @@
-﻿namespace CustomRenderer.UWP
+﻿namespace PassXYZ.UI.UWP
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -8,7 +8,7 @@
         public MainPage()
         {
             this.InitializeComponent();
-            this.LoadApplication(new CustomRenderer.App());
+            this.LoadApplication(new PassXYZ.UI.App());
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace CustomRenderer.iOS
+namespace PassXYZ.UI.iOS
 {
 	public class Application
 	{

@@ -1,13 +1,13 @@
 ﻿using System.IO;
-using CustomRenderer;
-using CustomRenderer.iOS;
+using PassXYZ.UI;
+using PassXYZ.UI.iOS;
 using Foundation;
 using WebKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer (typeof(HybridWebView), typeof(HybridWebViewRenderer))]
-namespace CustomRenderer.iOS
+namespace PassXYZ.UI.iOS
 {
 	public class HybridWebViewRenderer : ViewRenderer<HybridWebView, WKWebView>, IWKScriptMessageHandler
 	{

@@ -2,7 +2,7 @@
 using Android.Webkit;
 using Java.Interop;
 
-namespace CustomRenderer.Droid
+namespace PassXYZ.UI.Droid
 {
 	public class JSBridge : Java.Lang.Object
 	{

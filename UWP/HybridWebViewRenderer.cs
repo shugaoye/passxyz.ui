@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CustomRenderer;
-using CustomRenderer.UWP;
+using PassXYZ.UI;
+using PassXYZ.UI.UWP;
 using Xamarin.Forms.Platform.UWP;
 using Windows.UI.Xaml.Controls;
 
 [assembly:ExportRenderer(typeof(HybridWebView), typeof(HybridWebViewRenderer))]
-namespace CustomRenderer.UWP
+namespace PassXYZ.UI.UWP
 {
     public class HybridWebViewRenderer : ViewRenderer<HybridWebView, Windows.UI.Xaml.Controls.WebView>
     {

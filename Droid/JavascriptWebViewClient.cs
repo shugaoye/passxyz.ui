@@ -1,6 +1,6 @@
 ﻿using Android.Webkit;
 
-namespace CustomRenderer.Droid
+namespace PassXYZ.UI.Droid
 {
     public class JavascriptWebViewClient : WebViewClient
     {
