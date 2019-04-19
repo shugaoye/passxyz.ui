@@ -37,7 +37,18 @@ namespace PassXYZ.UI.Droid
             if (e.NewElement != null)
             {
                 Control.AddJavascriptInterface(new JSBridge(this), "jsBridge");
-                Control.LoadUrl($"file:///android_asset/Content/{Element.Uri}");
+
+                if (Element.IsUriSource)
+                {
+                    Control.LoadUrl($"file:///android_asset/Content/{Element.Uri}");
+                }
+                else
+                {
+                    if (Element.Html != null)
+                    {
+                        Control.LoadData(Element.Html, "text/html", null);
+                    }
+                }
             }
         }
     }

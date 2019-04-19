@@ -5,6 +5,8 @@
 			 x:Class="PassXYZ.UI.HybridWebViewPage"
 			 Padding="0,20,0,0">
 	<ContentPage.Content>
-		<local:HybridWebView x:Name="hybridWebView" Uri="index.html" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <local:HybridWebView x:Name="hybridWebView" IsUriSource="true" 
+                             Uri="index.html" 
+                             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 	</ContentPage.Content>
 </ContentPage>

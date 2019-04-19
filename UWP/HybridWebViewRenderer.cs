@@ -32,7 +32,18 @@ namespace PassXYZ.UI.UWP
             {
                 Control.NavigationCompleted += OnWebViewNavigationCompleted;
                 Control.ScriptNotify += OnWebViewScriptNotify;
-                Control.Source = new Uri(string.Format("ms-appx-web:///Content//{0}", Element.Uri));
+
+                if(Element.IsUriSource)
+                {
+                    Control.Source = new Uri(string.Format("ms-appx-web:///Content//{0}", Element.Uri));
+                }
+                else
+                {
+                    if(Element.Html != null)
+                    {
+                        Control.NavigateToString(Element.Html);
+                    }
+                }
             }
         }
 

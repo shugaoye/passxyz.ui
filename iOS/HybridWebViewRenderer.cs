@@ -35,9 +35,21 @@ namespace PassXYZ.UI.iOS
 				hybridWebView.Cleanup ();
 			}
 			if (e.NewElement != null) {
-				string fileName = Path.Combine (NSBundle.MainBundle.BundlePath, string.Format ("Content/{0}", Element.Uri));
-				Control.LoadRequest (new NSUrlRequest (new NSUrl (fileName, false)));
-			}
+                if (Element.IsUriSource)
+                {
+                    string fileName = Path.Combine(NSBundle.MainBundle.BundlePath, string.Format("Content/{0}", Element.Uri));
+                    Control.LoadRequest(new NSUrlRequest(new NSUrl(fileName, false)));
+                }
+                else
+                {
+                    if (Element.Html != null)
+                    {
+                        // refer to: https://docs.microsoft.com/en-us/dotnet/api/webkit.wkwebview.loadhtmlstring?view=xamarin-ios-sdk-12
+                        string fileName = Path.Combine(NSBundle.MainBundle.BundlePath, "Content/");
+                        Control.LoadHtmlString(Element.Html, new NSUrl(fileName, false));
+                    }
+                }
+            }
 		}
 
 		public void DidReceiveScriptMessage (WKUserContentController userContentController, WKScriptMessage message)
