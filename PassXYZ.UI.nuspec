@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>com.passxyz.ui</id>
+    <version>1.0.0</version>
+    <authors>Roger Ye</authors>
+    <owners>Roger Ye</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/shugaoye/passxyz.ui</projectUrl>
+    <iconUrl>https://passxyz.github.io/images/passxyz_cloud96.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PassXYZ UI Library.</description>
+    <releaseNotes>Enhanced HybridWebView</releaseNotes>
+    <copyright>Copyright 2019 Roger Ye</copyright>
+    <tags>Xamarin Xamarin.Forms iOS Android UWP </tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="PassXYZ.UI\bin\Release\netstandard2.0\PassXYZ.UI.dll" target="lib\netstandard2.0\PassXYZ.UI.dll" />
+    <file src="PassXYZ.UI\bin\Release\netstandard2.0\PassXYZ.UI.pdb" target="lib\netstandard2.0\PassXYZ.UI.pdb" />
+
+    <file src="Droid\bin\Release\PassXYZ.UI.dll" target="lib\MonoAndroid10\PassXYZ.UI.dll"/>
+    <file src="Droid\bin\Release\PassXYZ.UI.pdb" target="lib\MonoAndroid10\PassXYZ.UI.pdb"/>
+    <file src="Droid\bin\Release\PassXYZ.UI.Droid.dll" target="lib\MonoAndroid10\PassXYZ.UI.Droid.dll"/>
+    <file src="Droid\bin\Release\PassXYZ.UI.Droid.pdb" target="lib\MonoAndroid10\PassXYZ.UI.Droid.pdb"/>
+
+    <file src="iOS\bin\iPhone\Release\PassXYZ.UI.dll" target="lib\Xamarin.iOS10\PassXYZ.UI.dll"/>
+    <file src="iOS\bin\iPhone\Release\PassXYZ.UI.pdb" target="lib\Xamarin.iOS10\PassXYZ.UI.pdb"/>
+
+    <file src="UWP\bin\x86\Release\PassXYZ.UI.dll" target="lib\UAP10\PassXYZ.UI.dll"/>
+    <file src="UWP\bin\x86\Release\PassXYZ.UI.pdb" target="lib\UAP10\PassXYZ.UI.pdb"/>
+  </files>
+</package>
