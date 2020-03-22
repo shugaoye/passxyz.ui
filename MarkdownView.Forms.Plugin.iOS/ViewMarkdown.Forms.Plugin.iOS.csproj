@@ -49,9 +49,7 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="MarkdownViewRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\easymde.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\main.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

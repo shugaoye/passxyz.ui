@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using CommonMark;
 
+using ViewMarkdown.Forms.Plugin.Abstractions.Resx;
+
 namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
     /// <summary>
@@ -80,25 +82,12 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
         private void SetWebViewSourceFromMarkdown()
         {
-            string swapCssFunction =
-                @"
-function _sw(e){ 
-    var cssFile = '" + _baseUrl + "'+e+'.css'; " +
-  @"document.getElementById('_ss').setAttribute('href',cssFile);
-}";
-            string head = @"
-<head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
-    <link id='_ss' rel='stylesheet' href='#' >
-    <script>" + swapCssFunction + @"</script>
-</head>";
+            string head = AppResource.Header;
+            string footer = AppResource.Footer;
 
-            var body = @"
-<body>" +
-    CommonMarkConverter.Convert(Markdown) +
-"</body>";
+            var body = head + Markdown + footer;
 
-            Source = new HtmlWebViewSource { Html = "<html>" + head + body + "</html>", BaseUrl = _baseUrl };
+            Source = new HtmlWebViewSource { Html = body, BaseUrl = _baseUrl };
 
             SetStylesheet();
         }

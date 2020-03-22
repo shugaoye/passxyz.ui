@@ -125,6 +125,10 @@
       <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="easymde.min.css" />
+    <Content Include="main.js" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
