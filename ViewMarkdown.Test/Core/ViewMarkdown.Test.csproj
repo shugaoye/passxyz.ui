@@ -9,6 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Abstractions\PassXYZ.UI.Abstractions.csproj" />
+    <ProjectReference Include="..\..\PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj" />
   </ItemGroup>
 </Project>

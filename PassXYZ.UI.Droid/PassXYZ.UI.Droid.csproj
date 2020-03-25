@@ -10,8 +10,8 @@
     <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ViewMarkdown.Forms.Plugin.Droid</RootNamespace>
-    <AssemblyName>ViewMarkdown.Forms.Plugin.Droid</AssemblyName>
+    <RootNamespace>PassXYZ.UI.Droid</RootNamespace>
+    <AssemblyName>PassXYZ.UI.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -59,9 +59,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+    <ProjectReference Include="..\PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj">
       <Project>{b5801cad-cca2-4455-b8b3-e9e2e7226695}</Project>
-      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+      <Name>PassXYZ.UI.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewMarkdown.Forms.Plugin.Abstractions", "MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj", "{B5801CAD-CCA2-4455-B8B3-E9E2E7226695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassXYZ.UI.Abstractions", "PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj", "{B5801CAD-CCA2-4455-B8B3-E9E2E7226695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Droid", "MarkdownView.Forms.Plugin.Droid\ViewMarkdown.Forms.Plugin.Droid.csproj", "{AEFF6EC6-4B01-4CF2-A038-9403EF237A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.Droid", "PassXYZ.UI.Droid\PassXYZ.UI.Droid.csproj", "{AEFF6EC6-4B01-4CF2-A038-9403EF237A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.iOS", "MarkdownView.Forms.Plugin.iOS\ViewMarkdown.Forms.Plugin.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.iOS", "PassXYZ.UI.iOS\PassXYZ.UI.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Uwp", "MarkdownView.Forms.Plugin.Uwp\ViewMarkdown.Forms.Plugin.Uwp.csproj", "{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.Uwp", "PassXYZ.UI.Uwp\PassXYZ.UI.Uwp.csproj", "{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

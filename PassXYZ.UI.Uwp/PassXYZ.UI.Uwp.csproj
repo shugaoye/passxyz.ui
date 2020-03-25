@@ -7,8 +7,8 @@
     <ProjectGuid>{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ViewMarkdown.Forms.Plugin.Uwp</RootNamespace>
-    <AssemblyName>ViewMarkdown.Forms.Plugin.Uwp</AssemblyName>
+    <RootNamespace>PassXYZ.UI.Uwp</RootNamespace>
+    <AssemblyName>PassXYZ.UI.Uwp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -109,7 +109,7 @@
     <Compile Include="MarkdownViewRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebViewBaseUrl.cs" />
-    <EmbeddedResource Include="Properties\MarkdownView.Forms.Plugin.Uwp.rd.xml" />
+    <EmbeddedResource Include="Properties\PassXYZ.UI.Uwp.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -120,9 +120,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+    <ProjectReference Include="..\PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj">
       <Project>{7ba0f458-da47-40a2-8b50-1c157d7070c8}</Project>
-      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+      <Name>PassXYZ.UI.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

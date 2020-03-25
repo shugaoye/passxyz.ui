@@ -11,15 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Test.Uwp", "Uw
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{C4E7E9D8-BF48-4289-AE9E-B8C783ECF132}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewMarkdown.Forms.Plugin.Abstractions", "..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj", "{7BA0F458-DA47-40A2-8B50-1C157D7070C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassXYZ.UI.Abstractions", "..\PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj", "{7BA0F458-DA47-40A2-8B50-1C157D7070C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.iOS", "..\MarkdownView.Forms.Plugin.iOS\ViewMarkdown.Forms.Plugin.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.iOS", "..\PassXYZ.UI.iOS\PassXYZ.UI.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Uwp", "..\MarkdownView.Forms.Plugin.Uwp\ViewMarkdown.Forms.Plugin.Uwp.csproj", "{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.Uwp", "..\PassXYZ.UI.Uwp\PassXYZ.UI.Uwp.csproj", "{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Test.Droid", "Droid\ViewMarkdown.Test.Droid.csproj", "{CA79DF06-9000-49E4-A2EF-B47C516B7BCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Droid", "..\MarkdownView.Forms.Plugin.Droid\ViewMarkdown.Forms.Plugin.Droid.csproj", "{AEFF6EC6-4B01-4CF2-A038-9403EF237A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.Droid", "..\PassXYZ.UI.Droid\PassXYZ.UI.Droid.csproj", "{AEFF6EC6-4B01-4CF2-A038-9403EF237A54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
