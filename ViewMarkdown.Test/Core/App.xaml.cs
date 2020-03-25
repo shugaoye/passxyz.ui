@@ -1,4 +1,4 @@
-﻿using ViewMarkdown.Forms.Plugin.Abstractions;
+﻿using PassXYZ.UI.Abstractions;
 using Xamarin.Forms;
 
 namespace ViewMarkdown.Test

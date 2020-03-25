@@ -1,9 +1,9 @@
-﻿using ViewMarkdown.Forms.Plugin.Abstractions;
-using ViewMarkdown.Forms.Plugin.Uwp;
+﻿using PassXYZ.UI.Abstractions;
+using PassXYZ.UI.Uwp;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(WebViewBaseUrl))]
-namespace ViewMarkdown.Forms.Plugin.Uwp
+namespace PassXYZ.UI.Uwp
 {
     public class WebViewBaseUrl : IWebViewBaseUrl
     {

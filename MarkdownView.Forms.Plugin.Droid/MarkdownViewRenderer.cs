@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace ViewMarkdown.Forms.Plugin.Droid
+namespace PassXYZ.UI.Droid
 {
 	public class MarkdownViewRenderer
 	{

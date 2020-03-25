@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ViewMarkdown.Forms.Plugin.Uwp
+namespace PassXYZ.UI.Uwp
 {
     public class MarkdownViewRenderer
     {

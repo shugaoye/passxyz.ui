@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace ViewMarkdown.Forms.Plugin.iOS
+namespace PassXYZ.UI.iOS
 {
 	public class MarkdownViewRenderer
 	{

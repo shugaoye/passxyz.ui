@@ -2,7 +2,7 @@
 using CommonMark;
 using CommonMark.Syntax;
 
-namespace ViewMarkdown.Forms.Plugin.Abstractions
+namespace PassXYZ.UI.Abstractions
 {
     /// <summary>
     /// A formatter that will ignore all link tags inside a markdown document

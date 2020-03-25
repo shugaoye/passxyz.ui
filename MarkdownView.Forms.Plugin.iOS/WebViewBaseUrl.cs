@@ -1,9 +1,9 @@
 ﻿using Foundation;
-using ViewMarkdown.Forms.Plugin.Abstractions;
-using ViewMarkdown.Forms.Plugin.iOS;
+using PassXYZ.UI.Abstractions;
+using PassXYZ.UI.iOS;
 using Xamarin.Forms;
 
-namespace ViewMarkdown.Forms.Plugin.iOS
+namespace PassXYZ.UI.iOS
 {
 
 

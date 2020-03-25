@@ -2,9 +2,9 @@
 using Xamarin.Forms;
 using CommonMark;
 
-using ViewMarkdown.Forms.Plugin.Abstractions.Resx;
+using PassXYZ.UI.Abstractions.Resx;
 
-namespace ViewMarkdown.Forms.Plugin.Abstractions
+namespace PassXYZ.UI.Abstractions
 {
     /// <summary>
     /// A View that presents Markdown content.

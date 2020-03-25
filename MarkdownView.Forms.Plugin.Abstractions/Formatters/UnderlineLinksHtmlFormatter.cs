@@ -2,7 +2,7 @@
 using CommonMark.Syntax;
 using CommonMark;
 
-namespace ViewMarkdown.Forms.Plugin.Abstractions
+namespace PassXYZ.UI.Abstractions
 {
     /// <summary>
     /// A formatter that will underline all link tags inside a markdown document

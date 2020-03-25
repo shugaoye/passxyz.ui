@@ -1,10 +1,10 @@
-﻿using ViewMarkdown.Forms.Plugin.Abstractions;
-using ViewMarkdown.Forms.Plugin.Droid;
+﻿using PassXYZ.UI.Abstractions;
+using PassXYZ.UI.Droid;
 using Xamarin.Forms;
 
 
 [assembly: Dependency(typeof(WebViewBaseUrl))]
-namespace ViewMarkdown.Forms.Plugin.Droid
+namespace PassXYZ.UI.Droid
 {
 	public class WebViewBaseUrl : IWebViewBaseUrl
 	{

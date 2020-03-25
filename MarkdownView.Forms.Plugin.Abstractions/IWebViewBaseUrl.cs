@@ -1,4 +1,4 @@
-﻿namespace ViewMarkdown.Forms.Plugin.Abstractions
+﻿namespace PassXYZ.UI.Abstractions
 {
 	public interface IWebViewBaseUrl
 	{
