@@ -82,8 +82,8 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
         private void SetWebViewSourceFromMarkdown()
         {
-            string head = AppResource.Header;
-            string footer = AppResource.Footer;
+            string head = AppResources.Header;
+            string footer = AppResources.Footer;
 
             var body = head + Markdown + footer;
 
