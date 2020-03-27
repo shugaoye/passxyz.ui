@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="MarkdownViewRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\MarkdownGridViewRenderer.cs" />
     <Compile Include="WebViewBaseUrl.cs" />
   </ItemGroup>
   <ItemGroup>

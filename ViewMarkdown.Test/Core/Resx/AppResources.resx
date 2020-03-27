@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+    <comment>About information of PassXYZ application</comment>
+  </data>
+  <data name="DefaultMarkdownText" xml:space="preserve">
+    <value>This brief introduction is meant for those who are the new users of [PassXYZ](https://passxyz.github.io/). If you are a [KeePass](https://keepass.info/) veteran, you may skip this article and read another one called _In-depth understanding of PassXYZ_ on the [PassXYZ](https://passxyz.github.io/) website which can be found by clicking **Learn More** in menu item **Help**. 
+
+[PassXYZ](https://passxyz.github.io/) is similar to other password management software. It is quite easy to use. After the installation of [PassXYZ](https://passxyz.github.io/), the first screen you can see when you launch it, is to setup a username and password. Please be reminded that the password here is the master password of the database. If you forget it, nobody can access the database anymore.
+
+After setup of the username and password, you will enter the main page where you can record all your  personal information. Well, how to start using it? On the top-right hand side of the screen, you will see three icons. You must be able to recognize that they are **Search**, **Add** and **Logout**, right?
+
+Now, you can start entering all your personal information that you want [PassXYZ](https://passxyz.github.io/) to remember for you, such as bank accounts, IC, Passport, your favorite network accounts or any other personal documents. Let's use ID card as an example to explain how to add an item in PassXYZ. First, click on the icon **+**, you will get a list of four choices containing **Group**, **Entry**, **Notes** and **Using Templates**. Well, there is no choice for **ID card**, what should I do? Never mind, you may go to **Using Templates** to search for it. Most of the frequently-used items have been typically made as templates in PassXYZ. Even there is no choice that you are looking for, you still have three ways to enter your item. The first way is the laziest one. All the items that you cannot find in the templates, you may choose **Entry** in the list which is the general item for everything. Just key in all the information that you need, and save them thereafter. The **Entry** is the standard choice from KeePass. The second way is trying to find the template you want on [PassXYZ](https://passxyz.github.io/) website. There will be more templates there. The third choice is to create an item in templates on your own if you are not satisfied with the above. Once you know how to do that, you will be a master of [PassXYZ](https://passxyz.github.io/).
+
+We have introduced **Entry** and **Using Templates** as above. You may ask, what are **Group** and **Notes**? **Group** is actually a folder. For example, you may create a **Group** named **Banks**, and then enter **Banks** to choose **Entry** to key in the information of your bank account. You may wish to create separate entries for your different bank accounts under the **Banks** group so that they can be well-managed for your future use. As for the **Notes**, it is the same as what it means here. It is just a tool for you to record anything, such as a small piece of article or a paragraph of words. For example, this article is a **Notes**. In PassXYZ, you can use **Markdown** syntax to format your notes. With **Markdown** support, you can have a better view of plain text.
+
+Let's come back to the **ID card** to be added. You should be able to find **ID card** in the built-in templates. You can choose this template and fill in all the necessary information. Please do remember to save it after finishing filling in. Other than the literal information listed in the templates,  you can also attach scanned copies or photos of your documents as attachments. As such, next time when you are out on some important errand and need any of your documents urgently, you may easily share a copy of your document from [PassXYZ](https://passxyz.github.io/) using instant messaging tool to anyone you need.
+
+The basic usage of [PassXYZ](https://passxyz.github.io/) is just that simple. For more information, please visit [PassXYZ](https://passxyz.github.io/) website. 
+
+### FAQ:
+
+**Does it support fingerprint?** 
+
+Yes, you can turn on/off it in the **Settings**.
+
+**Does it support export/import data file?** 
+
+Yes, you can find it in the **Settings** as well.
+
+**Does it support synchronization between two devices?** 
+
+Yes, you can synchronize two devices in the **Settings**.
+
+**How to install PassXYZ on different platforms?**
+
+You can install PassXYZ on Android, iOS and Windows 10. Please refer to the below link about how to install PassXYZ on different platforms.
+https://passxyz.github.io/2018/06/26/Downloads/
+
+
+**Where I can download additional Templates?**
+
+PassXYZ built-in template files can be downloaded at the below links:
+
+1. [English](/passxyz_template/passxyz_en-us.t4xyz)
+2. [Chinese Simplified](/passxyz_template/passxyz_zh-hans.t4xyz)
+3. [Chinese Traditional](/passxyz_template/passxyz_zh-hant.t4xyz)</value>
+  </data>
+</root>

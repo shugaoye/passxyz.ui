@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:PassXYZ.UI.Abstractions"
+             xmlns:views="clr-namespace:PassXYZ.UI.Abstractions.Controls"
+             x:Class="PassXYZ.UI.Abstractions.MarkdownContentView">
+  <ContentView.Content>
+        <views:MarkdownGridView Padding="0,0,0,0"
+                         VerticalOptions="FillAndExpand">
+            <local:MarkdownView x:Name="markdownView"></local:MarkdownView>
+        </views:MarkdownGridView>
+  </ContentView.Content>
+</ContentView>
