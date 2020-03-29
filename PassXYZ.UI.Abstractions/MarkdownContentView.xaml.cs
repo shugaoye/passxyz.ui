@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace PassXYZ.UI.Abstractions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MarkdownContentView : ContentView
+    public partial class MarkdownEditor : ContentView
     {
-        public MarkdownContentView()
+        public MarkdownEditor()
         {
             InitializeComponent();
 
@@ -23,7 +23,7 @@ namespace PassXYZ.UI.Abstractions
         public static readonly BindableProperty TextProperty = BindableProperty.Create(
             propertyName: "Text",
             returnType: typeof(string),
-            declaringType: typeof(MarkdownContentView),
+            declaringType: typeof(MarkdownEditor),
             defaultValue: default(string));
 
         public string Text

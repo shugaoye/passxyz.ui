@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:PassXYZ.UI.Abstractions"
              xmlns:views="clr-namespace:PassXYZ.UI.Abstractions.Controls"
-             x:Class="PassXYZ.UI.Abstractions.MarkdownContentView">
+             x:Class="PassXYZ.UI.Abstractions.MarkdownEditor">
   <ContentView.Content>
         <views:MarkdownGridView Padding="0,0,0,0"
                          VerticalOptions="FillAndExpand">

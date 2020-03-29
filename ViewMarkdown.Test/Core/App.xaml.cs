@@ -9,14 +9,11 @@ namespace ViewMarkdown.Test
 		public App()
 		{
 			InitializeComponent();
-			/*			var _webView = new MarkdownView
-						{
-							Markdown = Md,
-							VerticalOptions = LayoutOptions.FillAndExpand
-						};
-			*/
-			var _webView = new MarkdownContentView();
-			_webView.Text = Md;
+
+			var _webView = new MarkdownEditor
+			{
+				Text = Md
+			};
 			MainPage = new ContentPage()
 			{
 				// Accomodate iPhone status bar.
