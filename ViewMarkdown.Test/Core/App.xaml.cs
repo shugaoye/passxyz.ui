@@ -1,7 +1,6 @@
-﻿using PassXYZ.UI.Abstractions;
+﻿using System;
+using PassXYZ.UI.Abstractions;
 using Xamarin.Forms;
-
-using ViewMarkdown.Test.Resx;
 
 namespace ViewMarkdown.Test
 {
@@ -21,7 +20,7 @@ namespace ViewMarkdown.Test
 			MainPage = new ContentPage()
 			{
 				// Accomodate iPhone status bar.
-				Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
+				// Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
 				Content = _webView
 			};
 		}
@@ -40,7 +39,7 @@ namespace ViewMarkdown.Test
 		{
 			// Handle when your app resumes
 		}
-		private string Md = AppResources.DefaultMarkdownText;
+		private string Md = ViewMarkdown.Test.Properties.Resources.DefaultMarkdownText;
 
     }
 }
