@@ -2,7 +2,7 @@
 using PassXYZ.UI.Abstractions;
 using Xamarin.Forms;
 
-namespace ViewMarkdown.Test
+namespace PassXYZ.UI.Editor
 {
 	public partial class App : Application
 	{
@@ -36,7 +36,7 @@ namespace ViewMarkdown.Test
 		{
 			// Handle when your app resumes
 		}
-		private string Md = ViewMarkdown.Test.Properties.Resources.DefaultMarkdownText;
+		private string Md = PassXYZ.UI.Editor.Properties.Resources.DefaultMarkdownText;
 
     }
 }

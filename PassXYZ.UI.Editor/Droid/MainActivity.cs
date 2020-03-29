@@ -8,9 +8,9 @@ using Android.OS;
 using Android.Support.V7.App;
 using PassXYZ.UI.Droid;
 
-namespace ViewMarkdown.Test.Droid
+namespace PassXYZ.UI.Editor.Droid
 {
-	[Activity(Label = "ViewMarkdown.Test.Droid", Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity(Label = "PassXYZ.UI.Editor.Droid", Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
 		protected override void OnCreate(Bundle bundle)

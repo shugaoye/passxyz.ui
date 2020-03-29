@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace ViewMarkdown.Test.Uwp
+namespace PassXYZ.UI.Editor.Uwp
 {
     public sealed partial class MainPage
     {
@@ -23,7 +23,7 @@ namespace ViewMarkdown.Test.Uwp
         {
             this.InitializeComponent();
 
-            LoadApplication(new ViewMarkdown.Test.App());
+            LoadApplication(new PassXYZ.UI.Editor.App());
         }
     }
 }

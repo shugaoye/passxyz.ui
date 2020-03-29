@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ViewMarkdown.Test.iOS
+namespace PassXYZ.UI.Editor.iOS
 {
     public class Application
     {
