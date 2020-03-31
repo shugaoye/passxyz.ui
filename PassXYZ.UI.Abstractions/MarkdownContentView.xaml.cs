@@ -32,5 +32,9 @@ namespace PassXYZ.UI.Abstractions
             set { markdownView.Markdown = value; SetValue(TextProperty, value); }
         }
 
+        public System.Threading.Tasks.Task<string> EvaluateJavaScriptAsync(string script)
+        {
+            return markdownView.EvaluateJavaScriptAsync(script);
+        }
     }
 }
