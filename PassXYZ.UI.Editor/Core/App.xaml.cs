@@ -10,16 +10,7 @@ namespace PassXYZ.UI.Editor
 		{
 			InitializeComponent();
 
-			var _webView = new MarkdownEditor
-			{
-				Text = Md
-			};
-			MainPage = new ContentPage()
-			{
-				// Accomodate iPhone status bar.
-				// Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
-				Content = _webView
-			};
+			MainPage = new NavigationPage(new EditorPage());
 		}
 
 		protected override void OnStart()
@@ -36,7 +27,5 @@ namespace PassXYZ.UI.Editor
 		{
 			// Handle when your app resumes
 		}
-		private string Md = PassXYZ.UI.Editor.Properties.Resources.DefaultMarkdownText;
-
     }
 }
