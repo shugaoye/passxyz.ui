@@ -1,0 +1,3 @@
+[submodule "passxyz.ui.markdown"]
+	path = passxyz.ui.markdown
+	url = git@github.com:shugaoye/passxyz.ui.markdown.git
