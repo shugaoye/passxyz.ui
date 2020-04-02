@@ -41,11 +41,13 @@ namespace PassXYZ.UI.Editor
             {
                 _text = await GetMarkdownText();
                 editButton.Text = "Edit";
+                editButton.IconImageSource = "ic_passxyz_edit.png";
                 Debug.Print("Saving markdown text\n");
             }
             else 
             {
                 editButton.Text = "Save";
+                editButton.IconImageSource = "ic_passxyz_save.png";
                 Debug.Print("Editing markdown text\n");
             }
             TogglePreview();

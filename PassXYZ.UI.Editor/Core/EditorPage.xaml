@@ -10,7 +10,7 @@
         <ToolbarItem x:Name="editButton" Order="Primary"
                      Text="Edit"
                      Priority="0"
-                     IconImageSource="icon.png"
+                     IconImageSource="ic_passxyz_edit.png"
                      Clicked="OnItemClicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>

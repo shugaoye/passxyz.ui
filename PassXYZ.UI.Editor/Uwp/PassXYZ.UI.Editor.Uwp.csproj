@@ -133,6 +133,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="icon.png" />
+    <Content Include="ic_passxyz_edit.png" />
+    <Content Include="ic_passxyz_new.png" />
+    <Content Include="ic_passxyz_save.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
