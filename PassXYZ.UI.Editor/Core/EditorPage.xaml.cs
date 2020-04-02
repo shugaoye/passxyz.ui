@@ -13,24 +13,78 @@ namespace PassXYZ.UI.Editor
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditorPage : ContentPage
     {
+        private string _text;
         public EditorPage()
         {
             InitializeComponent();
 
             markdownEditor.Text = Properties.Resources.DefaultMarkdownText;
+            _text = Properties.Resources.DefaultMarkdownText;
+            Title = "PassXYZ Introduction";
         }
 
-        void OnItemClicked(object sender, EventArgs e)
+        public EditorPage(string text, string title) 
+        {
+            InitializeComponent();
+
+            markdownEditor.Text = text;
+            _text = text;
+            Title = title;
+        }
+
+        async void OnItemClicked(object sender, EventArgs e)
         {
             ToolbarItem item = (ToolbarItem)sender;
-            // messageLabel.Text = $"You clicked the \"{item.Text}\" toolbar item.";
-            CallJavaScript();
+
+            bool status = await IsPreviewActive();
+            if(!status)
+            {
+                _text = await GetMarkdownText();
+                editButton.Text = "Edit";
+                Debug.Print("Saving markdown text\n");
+            }
+            else 
+            {
+                editButton.Text = "Save";
+                Debug.Print("Editing markdown text\n");
+            }
+            TogglePreview();
         }
 
-        async void CallJavaScript()
+        public static readonly BindableProperty TextProperty = BindableProperty.Create(
+            propertyName: "Text",
+            returnType: typeof(string),
+            declaringType: typeof(EditorPage),
+            defaultValue: default(string));
+
+        public string Text
         {
-            var x = await markdownEditor.EvaluateJavaScriptAsync($"alert(\"Hello, World!\");");
-            Debug.Print(x);
+            get { return (string)GetValue(TextProperty); }
+            set { SetValue(TextProperty, value); _text = value; }
+        }
+
+        public async Task<bool> IsPreviewActive()
+        {
+            var x = await markdownEditor.EvaluateJavaScriptAsync($"MyMDE.isPreviewActive();");
+            if(x.Equals("true"))
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+        async Task<string> GetMarkdownText()
+        {
+            var x = await markdownEditor.EvaluateJavaScriptAsync($"MyMDE.value();");
+            return x;
+        }
+
+        async void TogglePreview()
+        {
+            await markdownEditor.EvaluateJavaScriptAsync($"MyMDE.togglePreview();");
         }
     }
 }

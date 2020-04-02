@@ -7,8 +7,8 @@
              xmlns:abstractions="clr-namespace:PassXYZ.UI.Abstractions;assembly=PassXYZ.UI.Abstractions"
              x:Class="PassXYZ.UI.Editor.EditorPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Order="Primary"
-                     Text="Save"
+        <ToolbarItem x:Name="editButton" Order="Primary"
+                     Text="Edit"
                      Priority="0"
                      IconImageSource="icon.png"
                      Clicked="OnItemClicked" />
