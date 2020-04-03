@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,9 @@ namespace PassXYZ.UI.Abstractions
 
             markdownView.Markdown = "Please take your notes.";
             markdownView.VerticalOptions = LayoutOptions.FillAndExpand;
+
+            markdownView.Navigated += (sender, e) => { Debug.Print("Navigated"); };
+            markdownView.Navigating += (sender, e) => { Debug.Print("Navigating"); };
         }
 
         public static readonly BindableProperty TextProperty = BindableProperty.Create(
