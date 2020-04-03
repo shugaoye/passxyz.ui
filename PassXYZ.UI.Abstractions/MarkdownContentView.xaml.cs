@@ -12,6 +12,13 @@ namespace PassXYZ.UI.Abstractions
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MarkdownEditor : ContentView
     {
+        enum MarkdownEditorStatus 
+        {
+            Save,
+            Edit,
+            Back
+        }
+
         public MarkdownEditor()
         {
             InitializeComponent();
@@ -37,30 +44,45 @@ namespace PassXYZ.UI.Abstractions
         /// If a "Save" button is clicked, the view should be changed to preview mode and save the text.
         /// If a "Edit" button is clicked, the view should be changed to editing mode and return null.
         /// </summary>
-        /// <returns></returns>
-        public async Task<string> SaveOrEdit()
+        /// <returns>(bool Status, string Text)</returns>
+        /// Status - return true, if the page is MarkdownEditor Page, false, if it is not the one.
+        /// Text - Markdown text
+        public async Task<(bool Status, string Text)> SaveOrEdit()
         {
             string _text = null;
-            bool status = await IsPreviewActive();
-            if (!status)
+            MarkdownEditorStatus status = await IsPreviewActive();
+            if (status == MarkdownEditorStatus.Back) 
+            {
+                markdownView.GoBack();
+                return (false, _text);
+            }
+
+            if (status == MarkdownEditorStatus.Save)
             {
                 // Get the text that need to be saved
                 _text = await GetMarkdownText();
             }
             TogglePreview();
-            return _text;
+            return (true, _text);
         }
 
-        async Task<bool> IsPreviewActive()
+        async Task<MarkdownEditorStatus> IsPreviewActive()
         {
             var x = await markdownView.EvaluateJavaScriptAsync($"MyMDE.isPreviewActive();");
-            if (x.Equals("true"))
+            if(x != null) 
             {
-                return true;
+                if (x.Equals("true"))
+                {
+                    return MarkdownEditorStatus.Edit;
+                }
+                else
+                {
+                    return MarkdownEditorStatus.Save;
+                }
             }
-            else
+            else 
             {
-                return false;
+                return MarkdownEditorStatus.Back;
             }
         }
 

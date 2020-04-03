@@ -28,19 +28,24 @@ namespace PassXYZ.UI.Editor
         {
             ToolbarItem item = (ToolbarItem)sender;
 
-            _text = await markdownEditor.SaveOrEdit();
-            if (_text != null)
+            var result = await markdownEditor.SaveOrEdit();
+            if(result.Status) 
             {
-                // Need to save _text at here
-                editButton.Text = "Edit";
-                editButton.IconImageSource = "ic_passxyz_edit.png";
-                Save(_text);
-            }
-            else 
-            {
-                editButton.Text = "Save";
-                editButton.IconImageSource = "ic_passxyz_save.png";
-                Debug.Print("Editing markdown text\n");
+                // If the result is from MarkdownEditor
+                _text = result.Text;
+                if (_text != null)
+                {
+                    // Need to save _text at here
+                    editButton.Text = "Edit";
+                    editButton.IconImageSource = "ic_passxyz_edit.png";
+                    Save(_text);
+                }
+                else
+                {
+                    editButton.Text = "Save";
+                    editButton.IconImageSource = "ic_passxyz_save.png";
+                    Debug.Print("Editing markdown text\n");
+                }
             }
         }
 
