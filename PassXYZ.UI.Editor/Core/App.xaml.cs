@@ -10,7 +10,7 @@ namespace PassXYZ.UI.Editor
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new EditorPage());
+			MainPage = new NavigationPage(new EditorPage(PassXYZ.UI.Editor.Properties.Resources.DefaultMarkdownText, "PassXYZ Editor"));
 		}
 
 		protected override void OnStart()
