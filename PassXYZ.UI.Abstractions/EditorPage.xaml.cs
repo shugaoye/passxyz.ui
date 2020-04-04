@@ -37,6 +37,7 @@ namespace PassXYZ.UI.Editor
             else 
             {
                 editButton.Text = "Back";
+                editButton.IconImageSource = "ic_passxyz_back.png";
                 pageCount++;
                 Debug.Print("Go to a new page, page count:" + pageCount.ToString() + ".\n");
             }            
@@ -54,11 +55,13 @@ namespace PassXYZ.UI.Editor
                 if (pageCount == 0)
                 {
                     editButton.Text = "Edit";
+                    editButton.IconImageSource = "ic_passxyz_edit.png";
                     Debug.Print("This is the home page, page count:" + pageCount.ToString() + ".\n");
                 }
                 else 
                 {
                     editButton.Text = "Back";
+                    editButton.IconImageSource = "ic_passxyz_back.png";
                     Debug.Print("It is not home page, page count:" + pageCount.ToString() + ".\n");
                 }
             }
@@ -82,6 +85,12 @@ namespace PassXYZ.UI.Editor
                         editButton.IconImageSource = "ic_passxyz_save.png";
                         Debug.Print("Editing markdown text\n");
                     }
+                }
+                else 
+                {
+                    /// In iOS, we need to set editButton to "Edit" here.
+                    editButton.Text = "Edit";
+                    editButton.IconImageSource = "ic_passxyz_edit.png";
                 }
             }
         }

@@ -109,6 +109,15 @@
     <ImageAsset Include="Assets.xcassets\icon.imageset\icon2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_passxyz_back.imageset\ic_passxyz_back.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_passxyz_back.imageset\ic_passxyz_back1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_passxyz_back.imageset\ic_passxyz_back2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_passxyz_edit.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -143,6 +152,9 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_passxyz_save.imageset\ic_passxyz_save2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_passxyz_back.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
