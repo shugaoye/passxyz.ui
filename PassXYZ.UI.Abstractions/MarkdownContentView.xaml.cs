@@ -20,6 +20,16 @@ namespace PassXYZ.UI.Abstractions
             Back
         }
 
+        Xamarin.Forms.WebViewSource _source;
+        public Xamarin.Forms.WebViewSource Source {
+            get { return markdownView.Source; } 
+            set { markdownView.Source = value; _source = value; } 
+        }
+
+        public delegate void MarkdownEditorNavigated(object sender, WebNavigatedEventArgs e);
+
+        public MarkdownEditorNavigated NavigatedHandler = null;
+
         public MarkdownEditor()
         {
             InitializeComponent();
@@ -27,8 +37,13 @@ namespace PassXYZ.UI.Abstractions
             markdownView.Markdown = "Please take your notes.";
             markdownView.VerticalOptions = LayoutOptions.FillAndExpand;
 
-            markdownView.Navigated += (sender, e) => { Debug.Print("Navigated"); };
+            markdownView.Navigated += MarkdownViewNavigated;
             markdownView.Navigating += (sender, e) => { Debug.Print("Navigating"); };
+        }
+
+        void MarkdownViewNavigated(object sender, WebNavigatedEventArgs e)
+        {
+            NavigatedHandler?.Invoke(sender, e);
         }
 
         public static readonly BindableProperty TextProperty = BindableProperty.Create(
@@ -40,7 +55,16 @@ namespace PassXYZ.UI.Abstractions
         public string Text
         {
             get { return (string)GetValue(TextProperty); }
-            set { markdownView.Markdown = value; SetValue(TextProperty, value); }
+            set { markdownView.Markdown = value; SetValue(TextProperty, value); _source = markdownView.Source; }
+        }
+
+        public bool CanGoBack { get { return markdownView.CanGoBack; } }
+
+        public void GoBack() { markdownView.GoBack(); }
+
+        public void Reload() 
+        { 
+            markdownView.Source = _source; 
         }
 
         /// <summary>
@@ -86,6 +110,9 @@ namespace PassXYZ.UI.Abstractions
             }
             else 
             {
+                /// If the return value is null, this means the current page is not the home page.
+                /// We need to reload.
+                Reload();
                 return MarkdownEditorStatus.Back;
             }
         }
