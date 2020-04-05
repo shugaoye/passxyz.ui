@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Appname" xml:space="preserve">
+    <value>PassXYZ.UI.Editor</value>
+  </data>
+  <data name="action_id_add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="action_id_logout" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="action_id_switchusers" xml:space="preserve">
+    <value>切换用户</value>
+  </data>
+  <data name="action_id_cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="action_id_browse" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="action_id_copy" xml:space="preserve">
+    <value>拷贝</value>
+  </data>
+  <data name="action_id_generatebarcode" xml:space="preserve">
+    <value>生成条形码</value>
+  </data>
+  <data name="action_id_generateqrcode" xml:space="preserve">
+    <value>生成二维码</value>
+  </data>
+  <data name="action_id_sendemail" xml:space="preserve">
+    <value>发邮件</value>
+  </data>
+  <data name="action_id_show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="action_id_save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="action_id_search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="action_id_edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="action_id_delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="alert_id_no" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="alert_id_remove" xml:space="preserve">
+    <value>请确认删除</value>
+  </data>
+  <data name="alert_id_yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="action_id_import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="alert_id_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="action_id_cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="action_id_paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="action_id_login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="action_id_update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="about_passxyz_copyright" xml:space="preserve">
+    <value>Copyright 2020, 叶树杲 All rights reserved.</value>
+  </data>
+  <data name="about_passxyz_license" xml:space="preserve">
+    <value>PassXYZ使用Apache版权协议2.0版。如果您使用该软件，表示您同意Apache版权协议中的条款。您可以在下列网站获得Apache 2.0版权协议。</value>
+  </data>
+  <data name="about_passxyz_web" xml:space="preserve">
+    <value>您可以通过下面的PassXYZ网站下载模板，提交问题报告和了解使用说明。</value>
+  </data>
+  <data name="about_slogan" xml:space="preserve">
+    <value>您的个人信息管家</value>
+  </data>
+  <data name="about_wechat_info" xml:space="preserve">
+    <value>您也可以通过关注PassXYZ的微信公众号提供关于使用的反馈。PassXYZ的微信公众号是passxyz_kpclib。您也可以通过扫描下面的二维码关注。</value>
+  </data>
+  <data name="action_id_attach" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="about_passxyz_usage" xml:space="preserve">
+    <value>这篇文章是写给[PassXYZ](https://passxyz.github.io/)初始用户的简短使用说明。如果您是[KeePass](https://keepass.info/)的资深用户，可以跳过这篇文章去PassXYZ网站阅读另外一篇叫**深入理解PassXYZ**的文章（[PassXYZ](https://passxyz.github.io/)的网站链接请点击**帮助**页面的**了解更多**）。
+
+[PassXYZ](https://passxyz.github.io/)与其他密码管理软件一样，使用其实相当简单，没有太多复杂的使用操作。当安装好[PassXYZ](https://passxyz.github.io/)后，打开的第一个页面是建立一个用户名和设置一个主密码。这里需要提醒一下的是，这个主密码非常重要，一旦忘记，就没有人能打开这个数据库了。
+
+设置好用户名和主密码后，进入的将是一个可以记录您所有个人信息的管理系统。那么如何开始使用呢？屏幕右上角有三个图标，根据图标标识，您一定能认出来它们是**搜索**，**添加**和**退出**吧？
+
+现在，您就可以开始添加您想让[PassXYZ](https://passxyz.github.io/)帮您记住的任何个人信息了，比如说银行卡、身份证、护照、社保卡、各类证书、常用网站账号等等。以**身份证**为例吧：点击加号图标+，您可以看到屏幕会显示**目录**，**条目**，**便签**和**从模板中选择**共四个选项。没发现**身份证**选项啊？没关系，您可以先去**从模板中选择**里找找。很多常用的添加项目[PassXYZ](https://passxyz.github.io/)都有特制的固定模板，即便模板里没有您需要的添加项目，您也有三个输入办法：第一，懒人的办法，所有找不到的添加项目都可以使用通用选项**条目**，然后自行逐项输入您所需要记录的信息，最后保存即可。这个是原来KeePass自带的。第二，到[PassXYZ](https://passxyz.github.io/)网站上找找，那儿有更多模板。第三，如果都不满意，您还可以自己在模板中创建一个新的。当您开始创建模板时，您已经是[PassXYZ](https://passxyz.github.io/)达人了！
+
+上面介绍了**条目**和**从模板中选择**。您这会儿可能会问，那**目录**和**便签**又是什么？**目录**其实就是文件夹，例如您可以首先建立一个叫**银行**的目录，然后进入此目录，再选用**条目**形式分别输入您各个银行账户的信息，这样，您所有的银行信息都可以整齐地存放在**银行**目录下，方便您日后翻阅查找。再说**便签**吧，它就是一个您可以用来记录任何东西的地方，比如说这篇文章，也就是一个**便签**。[PassXYZ](https://passxyz.github.io/)中的**便签**是支持Markdown格式的，所以您可以用Markdown语法来美化**便签**。
+
+话说回来，身份证这项，在[PassXYZ](https://passxyz.github.io/)自带模板里是可以找到的。在模板里选择**身份证**，然后填上相关信息并保存就好了。除了证件上的信息，您还可以把证件的照片或扫描件作为附件加上。这样，当您下次在外办事遇到紧急情况需要证件复印件时，直接打开[PassXYZ](https://passxyz.github.io/)用微信分享一下就可以了。
+[PassXYZ](https://passxyz.github.io/)的基本使用其实就是这么简单，想了解更多，欢迎您关注[PassXYZ](https://passxyz.github.io/)网站。
+
+### 可能碰到的问题：
+
+**支持指纹登录吗？**
+支持，去**设置**中打开就可以了。
+
+**可以导出数据吗？**
+可以，去**设置**中导出。
+
+**可以同步吗？**
+没问题，上一步导出后，在其他设备上导入，然后在**设置**中同步即可。
+
+**PassXYZ自带的模板可以在这里下载：**
+
+1. [英文模板](/passxyz_template/passxyz_en-us.t4xyz)
+2. [中文简体模板](/passxyz_template/passxyz_zh-hans.t4xyz)
+3. [中文繁体模板](/passxyz_template/passxyz_zh-hant.t4xyz)</value>
+  </data>
+  <data name="action_id_share" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="action_id_close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="about_acknowledgement" xml:space="preserve">
+    <value>鸣谢</value>
+  </data>
+  <data name="about_url" xml:space="preserve">
+    <value>https://passxyz.github.io/categories/%E5%B8%AE%E5%8A%A9/</value>
+  </data>
+  <data name="about_problem_report" xml:space="preserve">
+    <value>如果在使用过程中发现任何问题，您可以将问题报告发送至PassXYZ的微信公众号或邮件地址passxyz@foxmail.com.</value>
+  </data>
+  <data name="about_problem_report_send" xml:space="preserve">
+    <value>发送问题报告</value>
+  </data>
+  <data name="about_problem_report_not_found" xml:space="preserve">
+    <value>没有发现问题报告。</value>
+  </data>
+  <data name="action_id_disable_sync" xml:space="preserve">
+    <value>禁用云同步</value>
+  </data>
+  <data name="action_id_enable_sync" xml:space="preserve">
+    <value>启用云同步</value>
+  </data>
+  <data name="action_id_properties" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="action_id_change_icon" xml:space="preserve">
+    <value>更换图标</value>
+  </data>
+  <data name="action_id_update_template" xml:space="preserve">
+    <value>重置模板</value>
+  </data>
+  <data name="action_id_move" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="action_id_add_icon" xml:space="preserve">
+    <value>添加图标</value>
+  </data>
+  <data name="action_id_back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+</root>

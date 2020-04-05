@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using PassXYZ.UI.Abstractions.Resx;
+
 namespace PassXYZ.UI.Abstractions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -34,7 +36,7 @@ namespace PassXYZ.UI.Abstractions
         {
             InitializeComponent();
 
-            markdownView.Markdown = "Please take your notes.";
+            markdownView.Markdown = AppResource.about_passxyz_web;
             markdownView.VerticalOptions = LayoutOptions.FillAndExpand;
 
             markdownView.Navigated += MarkdownViewNavigated;
