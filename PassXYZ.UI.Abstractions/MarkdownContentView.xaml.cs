@@ -25,7 +25,10 @@ namespace PassXYZ.UI.Abstractions
         Xamarin.Forms.WebViewSource _source;
         public Xamarin.Forms.WebViewSource Source {
             get { return markdownView.Source; } 
-            set { markdownView.Source = value; _source = value; } 
+            set { 
+                markdownView.Source = value; 
+                _source = value; 
+            }
         }
 
         public delegate void MarkdownEditorNavigated(object sender, WebNavigatedEventArgs e);
@@ -57,7 +60,11 @@ namespace PassXYZ.UI.Abstractions
         public string Text
         {
             get { return (string)GetValue(TextProperty); }
-            set { markdownView.Markdown = value; SetValue(TextProperty, value); _source = markdownView.Source; }
+            set { 
+                markdownView.Markdown = value; 
+                SetValue(TextProperty, value); 
+                _source = markdownView.Source; 
+            }
         }
 
         public bool CanGoBack { get { return markdownView.CanGoBack; } }

@@ -124,6 +124,6 @@
     <value>&lt;/textarea&gt;&lt;/section&gt;&lt;link rel="stylesheet" href="easymde.min.css"&gt;&lt;script src="main.js"&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
   </data>
   <data name="Header" xml:space="preserve">
-    <value>&lt;!DOCTYPE html&gt;&lt;html lang=en-us&gt;&lt;meta charset=UTF-8&gt;&lt;title&gt;PassXYZ.UI.Markdown&lt;/title&gt;&lt;meta content="width=device-width,initial-scale=1"name=viewport&gt;&lt;style&gt;.editor-preview h1,.editor-preview h2,.editor-preview h3,.editor-preview h4,.editor-preview h5{margin-bottom:10px}.editor-preview h1{border-bottom:1px solid #ddd}.editor-preview h1{border-bottom:1px solid #eee}&lt;/style&gt;&lt;section class=main-content&gt;&lt;textarea id=demo1&gt;</value>
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang=en-us&gt;&lt;meta charset=UTF-8&gt;&lt;title&gt;PassXYZ.UI.Markdown&lt;/title&gt;&lt;meta content="width=device-width,initial-scale=1"name=viewport&gt;&lt;style&gt;.editor-preview h1,.editor-preview h2,.editor-preview h3,.editor-preview h4,.editor-preview h5{margin-bottom:10px}.editor-preview h1{border-bottom:1px solid #ddd}.editor-preview h1{border-bottom:1px solid #eee}&lt;/style&gt;&lt;section class=main-content&gt;&lt;textarea id=demo1 hidden="true"&gt;</value>
   </data>
 </root>
