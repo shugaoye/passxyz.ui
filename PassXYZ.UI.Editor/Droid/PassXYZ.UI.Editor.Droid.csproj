@@ -83,6 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="PassXYZ.UI">
+      <Version>1.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>4.5.0.396</Version>
     </PackageReference>
@@ -104,14 +107,6 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj">
-      <Project>{7ba0f458-da47-40a2-8b50-1c157d7070c8}</Project>
-      <Name>PassXYZ.UI.Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\PassXYZ.UI.Droid\PassXYZ.UI.Droid.csproj">
-      <Project>{aeff6ec6-4b01-4cf2-a038-9403ef237a54}</Project>
-      <Name>PassXYZ.UI.Droid</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Core\PassXYZ.UI.Editor.csproj">
       <Project>{ae9bfa2e-d2e7-4b8a-bec6-f32f2cace31a}</Project>
       <Name>PassXYZ.UI.Editor</Name>
