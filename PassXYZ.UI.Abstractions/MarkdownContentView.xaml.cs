@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using PassXYZ.UI.Abstractions.Resx;
+
 namespace PassXYZ.UI.Abstractions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,7 +25,10 @@ namespace PassXYZ.UI.Abstractions
         Xamarin.Forms.WebViewSource _source;
         public Xamarin.Forms.WebViewSource Source {
             get { return markdownView.Source; } 
-            set { markdownView.Source = value; _source = value; } 
+            set { 
+                markdownView.Source = value; 
+                _source = value; 
+            }
         }
 
         public delegate void MarkdownEditorNavigated(object sender, WebNavigatedEventArgs e);
@@ -34,7 +39,7 @@ namespace PassXYZ.UI.Abstractions
         {
             InitializeComponent();
 
-            markdownView.Markdown = "Please take your notes.";
+            markdownView.Markdown = AppResource.about_passxyz_web;
             markdownView.VerticalOptions = LayoutOptions.FillAndExpand;
 
             markdownView.Navigated += MarkdownViewNavigated;
@@ -55,7 +60,11 @@ namespace PassXYZ.UI.Abstractions
         public string Text
         {
             get { return (string)GetValue(TextProperty); }
-            set { markdownView.Markdown = value; SetValue(TextProperty, value); _source = markdownView.Source; }
+            set { 
+                markdownView.Markdown = value; 
+                SetValue(TextProperty, value); 
+                _source = markdownView.Source; 
+            }
         }
 
         public bool CanGoBack { get { return markdownView.CanGoBack; } }

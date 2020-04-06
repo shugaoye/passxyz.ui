@@ -8,6 +8,8 @@ using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using PassXYZ.UI.Abstractions.Resx;
+
 namespace PassXYZ.UI.Editor
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -36,7 +38,7 @@ namespace PassXYZ.UI.Editor
             }
             else 
             {
-                editButton.Text = "Back";
+                editButton.Text = AppResource.action_id_back;
                 editButton.IconImageSource = "ic_passxyz_back.png";
                 pageCount++;
                 Debug.Print("Go to a new page, page count:" + pageCount.ToString() + ".\n");
@@ -54,13 +56,13 @@ namespace PassXYZ.UI.Editor
                 pageCount = pageCount - 1;
                 if (pageCount == 0)
                 {
-                    editButton.Text = "Edit";
+                    editButton.Text = AppResource.action_id_edit;
                     editButton.IconImageSource = "ic_passxyz_edit.png";
                     Debug.Print("This is the home page, page count:" + pageCount.ToString() + ".\n");
                 }
                 else 
                 {
-                    editButton.Text = "Back";
+                    editButton.Text = AppResource.action_id_back;
                     editButton.IconImageSource = "ic_passxyz_back.png";
                     Debug.Print("It is not home page, page count:" + pageCount.ToString() + ".\n");
                 }
@@ -75,13 +77,13 @@ namespace PassXYZ.UI.Editor
                     if (_text != null)
                     {
                         // Need to save _text at here
-                        editButton.Text = "Edit";
+                        editButton.Text = AppResource.action_id_edit;
                         editButton.IconImageSource = "ic_passxyz_edit.png";
                         Save(_text);
                     }
                     else
                     {
-                        editButton.Text = "Save";
+                        editButton.Text = AppResource.action_id_save;
                         editButton.IconImageSource = "ic_passxyz_save.png";
                         Debug.Print("Editing markdown text\n");
                     }
@@ -89,7 +91,7 @@ namespace PassXYZ.UI.Editor
                 else 
                 {
                     /// In iOS, we need to set editButton to "Edit" here.
-                    editButton.Text = "Edit";
+                    editButton.Text = AppResource.action_id_edit;
                     editButton.IconImageSource = "ic_passxyz_edit.png";
                 }
             }
