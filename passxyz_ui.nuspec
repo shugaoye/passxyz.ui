@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
       <id>PassXYZ.UI</id>
-      <version>1.0.0</version>
+      <version>1.0.3</version>
       <title>PassXYZ UI for Xamarin.Forms</title>
        <authors>Roger Ye</authors>
        <owners>Roger Ye</owners>
@@ -22,22 +22,48 @@
       <!--Core-->
      <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.dll" target="lib\netstandard2.0\PassXYZ.UI.Abstractions.dll" />
      <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.pdb" target="lib\netstandard2.0\PassXYZ.UI.Abstractions.pdb" />
+     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\en-US\PassXYZ.UI.Abstractions.resources.dll" target="lib\netstandard2.0\en-US\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" target="lib\netstandard2.0\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" target="lib\netstandard2.0\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" />
 
        <!--Xamarin.Android-->
      <file src="PassXYZ.UI.Droid\bin\Release\PassXYZ.UI.Droid.dll" target="lib\MonoAndroid10\PassXYZ.UI.Droid.dll" />
      <file src="PassXYZ.UI.Droid\bin\Release\PassXYZ.UI.Droid.pdb" target="lib\MonoAndroid10\PassXYZ.UI.Droid.pdb" />
-     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.dll" target="lib\MonoAndroid10\PassXYZ.UI.Abstractions.dll" />
-     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.pdb" target="lib\MonoAndroid10\PassXYZ.UI.Abstractions.pdb" />
+     <file src="PassXYZ.UI.Droid\bin\Release\PassXYZ.UI.Abstractions.dll" target="lib\MonoAndroid10\PassXYZ.UI.Abstractions.dll" />
+     <file src="PassXYZ.UI.Droid\bin\Release\PassXYZ.UI.Abstractions.pdb" target="lib\MonoAndroid10\PassXYZ.UI.Abstractions.pdb" />
+     <file src="PassXYZ.UI.Droid\bin\Release\en-US\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoAndroid10\en-US\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.Droid\bin\Release\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoAndroid10\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.Droid\bin\Release\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoAndroid10\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" />
 
      <!--Xamarin.iOS-->
      <file src="PassXYZ.UI.iOS\bin\Release\PassXYZ.UI.iOS.dll" target="lib\MonoTouch10\PassXYZ.UI.iOS.dll" />
-     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.dll" target="lib\MonoTouch10\PassXYZ.UI.Abstractions.dll" />
-     <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.pdb" target="lib\MonoTouch10\PassXYZ.UI.Abstractions.pdb" />
-
+     <file src="PassXYZ.UI.iOS\bin\Release\PassXYZ.UI.iOS.pdb" target="lib\MonoTouch10\PassXYZ.UI.iOS.pdb" />
+     <file src="PassXYZ.UI.iOS\bin\Release\PassXYZ.UI.Abstractions.dll" target="lib\MonoTouch10\PassXYZ.UI.Abstractions.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\PassXYZ.UI.Abstractions.pdb" target="lib\MonoTouch10\PassXYZ.UI.Abstractions.pdb" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Core.dll" target="lib\MonoTouch10\Xamarin.Forms.Core.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Core.pdb" target="lib\MonoTouch10\Xamarin.Forms.Core.pdb" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Core.xml" target="lib\MonoTouch10\Xamarin.Forms.Core.xml" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Platform.dll" target="lib\MonoTouch10\Xamarin.Forms.Platform.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Platform.iOS.dll" target="lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Platform.iOS.pdb" target="lib\MonoTouch10\Xamarin.Forms.Platform.iOS.pdb" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Xaml.dll" target="lib\MonoTouch10\Xamarin.Forms.Xaml.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Xaml.pdb" target="lib\MonoTouch10\Xamarin.Forms.Xaml.pdb" />
+     <file src="PassXYZ.UI.iOS\bin\Release\Xamarin.Forms.Xaml.xml" target="lib\MonoTouch10\Xamarin.Forms.Xaml.xml" />
+     <file src="PassXYZ.UI.iOS\bin\Release\en-US\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoTouch10\en-US\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoTouch10\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" />
+     <file src="PassXYZ.UI.iOS\bin\Release\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" target="lib\MonoTouch10\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" />
+	 
 	<!--UWP-->
 	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Uwp.dll" target="lib\UAP10\PassXYZ.UI.Uwp.dll" />
 	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Uwp.pdb" target="lib\UAP10\PassXYZ.UI.Uwp.pdb" />
-	<file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.dll" target="lib\UAP10\PassXYZ.UI.Abstractions.dll" />
-	<file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.pdb" target="lib\UAP10\PassXYZ.UI.Abstractions.pdb" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Uwp.pri" target="lib\UAP10\PassXYZ.UI.Uwp.pri" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Abstractions.dll" target="lib\UAP10\PassXYZ.UI.Abstractions.dll" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Abstractions.pdb" target="lib\UAP10\PassXYZ.UI.Abstractions.pdb" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Uwp\Assets\easymde.min.css" target="lib\UAP10\PassXYZ.UI.Uwp\Assets\easymde.min.css" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\PassXYZ.UI.Uwp\Assets\main.js" target="lib\UAP10\PassXYZ.UI.Uwp\Assets\main.js" />
+	<file src="PassXYZ.UI.Uwp\bin\Release\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml" target="lib\UAP10\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml" />
+    <file src="PassXYZ.UI.Uwp\bin\Release\en-US\PassXYZ.UI.Abstractions.resources.dll" target="lib\UAP10\en-US\PassXYZ.UI.Abstractions.resources.dll" />
+    <file src="PassXYZ.UI.Uwp\bin\Release\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" target="lib\UAP10\zh-Hans\PassXYZ.UI.Abstractions.resources.dll" />
+    <file src="PassXYZ.UI.Uwp\bin\Release\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" target="lib\UAP10\zh-Hant\PassXYZ.UI.Abstractions.resources.dll" />
 	</files>
 </package>

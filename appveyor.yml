@@ -1,9 +1,9 @@
-version: '1.0.0.{build}'
+version: '1.0.3.{build}'
 configuration: Release
 before_build:
   - nuget restore
 artifacts:
-  - path: Xam.Plugins.Forms.MarkdownView.1.0.0.nupkg
+  - path: PassXYZ.UI.1.0.3.nupkg
     name: nuget_pack
 assembly_info:
   patch: true
@@ -12,14 +12,14 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 build:
-  project: ViewMarkdown.sln
+  project: PassXYZ.UI.sln
   publish_nuget: true
   publish_nuget_symbols: false
   include_nuget_references: true
   verbosity: minimal
 after_build:
 - cmd: >-
-    nuget pack ViewMarkdown.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
+    nuget pack passxyz_ui.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
 deploy:
   provider: NuGet
   api_key:
