@@ -2,13 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
       <id>PassXYZ.UI</id>
-      <version>1.0.0</version>
+      <version>1.0.3</version>
       <title>PassXYZ UI for Xamarin.Forms</title>
        <authors>Roger Ye</authors>
        <owners>Roger Ye</owners>
        <projectUrl>https://github.com/shugaoye/passxyz.ui.git</projectUrl>
-       <iconUrl>https://passxyz.github.io/images/passxyz_cloud96.png</iconUrl>
-       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <icon>images\passxyz_editor_blue_128px.png</icon>
+	   <license type="file">LICENSE</license>
+	   <requireLicenseAcceptance>false</requireLicenseAcceptance>	   
        <description>
             A collection of UI components for Xamarin based on JavaScript/WebView.
        </description>
@@ -19,6 +20,8 @@
        </dependencies>
    </metadata>
    <files>
+	 <file src="PassXYZ.UI.Editor\Icons\passxyz_editor_blue_128px.png" target="images\" />
+	 <file src="LICENSE" target="LICENSE" />
       <!--Core-->
      <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.dll" target="lib\netstandard2.0\PassXYZ.UI.Abstractions.dll" />
      <file src="PassXYZ.UI.Abstractions\bin\Release\netstandard2.0\PassXYZ.UI.Abstractions.pdb" target="lib\netstandard2.0\PassXYZ.UI.Abstractions.pdb" />
