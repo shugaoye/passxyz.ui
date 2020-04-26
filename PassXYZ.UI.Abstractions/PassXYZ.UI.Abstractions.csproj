@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\libgit2sharp\LibGit2Sharp\LibGit2Sharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,5 +47,7 @@
       <Generator></Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <Import Project="..\libgit2sharp\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
 
 </Project>

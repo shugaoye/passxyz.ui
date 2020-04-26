@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassXYZ.UI.Abstractions", "PassXYZ.UI.Abstractions\PassXYZ.UI.Abstractions.csproj", "{B5801CAD-CCA2-4455-B8B3-E9E2E7226695}"
 EndProject
@@ -11,7 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.iOS", "PassXYZ.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassXYZ.UI.Uwp", "PassXYZ.UI.Uwp\PassXYZ.UI.Uwp.csproj", "{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibGit2Sharp", "LibGit2Sharp", "{6C372092-B2FF-460F-96C5-0555202EF244}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibGit2Sharp", "libgit2sharp\LibGit2Sharp\LibGit2Sharp.csproj", "{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LibGit2Sharp.Shared", "libgit2sharp\LibGit2Sharp.Shared\LibGit2Sharp.Shared.shproj", "{6A474118-6CF1-4C76-8A52-2286B9AB0CFA}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		libgit2sharp\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{6a474118-6cf1-4c76-8a52-2286b9ab0cfa}*SharedItemsImports = 13
+		libgit2sharp\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{b5801cad-cca2-4455-b8b3-e9e2e7226695}*SharedItemsImports = 5
+		libgit2sharp\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{c5a1f85e-0cab-4ae4-805a-5b183f97de44}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -87,9 +98,29 @@ Global
 		{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}.Release|x64.Build.0 = Release|x64
 		{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}.Release|x86.ActiveCfg = Release|x86
 		{0179D6F0-F898-4189-A7D5-ED3BBB85DD92}.Release|x86.Build.0 = Release|x86
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|x64.Build.0 = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Debug|x86.Build.0 = Debug|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|ARM.Build.0 = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|x64.Build.0 = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5A1F85E-0CAB-4AE4-805A-5B183F97DE44} = {6C372092-B2FF-460F-96C5-0555202EF244}
+		{6A474118-6CF1-4C76-8A52-2286B9AB0CFA} = {6C372092-B2FF-460F-96C5-0555202EF244}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD65BAC1-C545-4C3C-8952-2251EDC2CCE2}

@@ -1,3 +1,6 @@
 [submodule "passxyz.ui.markdown"]
 	path = passxyz.ui.markdown
 	url = git@github.com:shugaoye/passxyz.ui.markdown.git
+[submodule "libgit2sharp"]
+	path = libgit2sharp
+	url = git@github.com:shugaoye/libgit2sharp.git
